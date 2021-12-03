@@ -23,3 +23,6 @@ def remove_dup_gen(x):
     for item in x:
         if item not in result:
             yield item
+
+            #added this for testing ignore
+            
