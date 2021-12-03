@@ -3,6 +3,7 @@ lowercase letters, uppercase letters, numbers, and symbols. The passwords should
 every time the user asks for a new password. Include your run-time code in a main method. """
 
 from random import choice
+import os
 
 
 # this function explains to the user how the program works and asks for what characters they want and how long it should
@@ -12,7 +13,7 @@ def inputs():
                         'corresponds to it:\n 1: uppercase letters\n 2: lowercase letters\n 3: numbers\n 4: special '
                         'characters \nfor example if you only want uppercase letters and numbers type:13\n \nType '
                         'here: ')
-    length = int(input('How long would you like your password to be? '))
+    length = int(input('\nHow long would you like your password to be? '))
     return char_choice, length
 
 
@@ -43,8 +44,11 @@ def main():
     # string I created above using the users choices.
     for i in range(length):
         result += choice(chars_to_choose_from)
-    return f'Your {length} character password is: {result}'
+    return f'\nYour {length} character password is: "{result}"'
 
 
 if __name__ == '__main__':
+    # added this clear function to make it look cleaner in cmd window
+    clear = lambda: os.system('cls')
+    clear()
     print(main())
