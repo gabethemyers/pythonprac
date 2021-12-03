@@ -1,0 +1,2 @@
+# Python Practice
+This repo is a collection of programs that I wrote to practice python and to help me learn git/github. I mostly use www.practicepython.org for the problems, sometimes I go off course and add some of my own things. Eventually I might add some programs that I've already made before github/git, but they have no comments and probably aren't very good. Also, I am getting some coding books for Christmas so I'll probably make folders for those. Feel free to look at my code I try to explain a lot of it through comments.
