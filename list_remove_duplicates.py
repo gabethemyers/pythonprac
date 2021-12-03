@@ -1,3 +1,6 @@
+"""Write a program (function!) that takes a list and returns a new list that contains all the elements of the first
+list minus all the duplicates. """
+
 # function to remove duplicate elements in a list using lists
 def remove_dup_list(x):
     result = []
@@ -23,5 +26,3 @@ def remove_dup_gen(x):
     for item in x:
         if item not in result:
             yield item
-
-            #added this for testing ign
