@@ -24,5 +24,4 @@ def remove_dup_gen(x):
         if item not in result:
             yield item
 
-            #added this for testing ignore
-            
+            #added this for testing ign
