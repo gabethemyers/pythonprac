@@ -1,5 +1,5 @@
-import os
 from requests_html import HTML, HTMLSession
+import os
 os.chdir('request-html_tutorial')
 
 with open('simple.html') as html_file:
