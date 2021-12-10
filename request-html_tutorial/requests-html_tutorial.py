@@ -1,6 +1,6 @@
-import csv
+import csv, os
 from requests_html import HTML, HTMLSession
-
+os.chdir('request-html_tutorial')
 # with open('simple.html') as html_file:
 #     source = html_file.read()
 #     html = HTML(html=source)
