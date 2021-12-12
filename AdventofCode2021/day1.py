@@ -2000,12 +2000,25 @@ meow = '''149
 8895'''
 thelist = meow.split('\n')
 
-count = 0
+count1 = 0
 thelist = [int(line) for line in meow.splitlines()]
 
-
+# part one solution
 for i in range(len(thelist) - 1):
     if thelist[i] < thelist[i + 1]:
-        count += 1
-        print(thelist[i], thelist[i + 1])
-print(count)
+        count1 += 1
+print(count1)
+
+# part 2 solution
+previoussum = 0
+count2 = 0
+for i in range(len(thelist) - 1):
+    if i + 2 >= len(thelist):
+        break
+    thesum = thelist[i] + thelist[i + 1] + thelist[i + 2]
+    if previoussum != 0 and previoussum < thesum:
+        count2 += 1
+    previoussum = thesum
+
+print(count2)
+
