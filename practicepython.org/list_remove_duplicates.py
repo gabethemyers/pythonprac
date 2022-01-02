@@ -18,7 +18,7 @@ def remove_dup_set(x):
     return list(set(x))
 
 
-# function that uses a generator to do this even tho problem asks for a list as a result but generators are fun
+# function that uses a generator to do this even tho problem asks for a list as a result but generators are fun.
 def remove_dup_gen(x):
     result = []
     # loop that goes through each item in the input list and as long as
